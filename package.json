@@ -7,5 +7,18 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cron": "^1.0.9",
+    "debug": "^2.2.0",
+    "express": "^4.13.1",
+    "koa": "^0.21.0",
+    "koa-better-body": "^1.0.17",
+    "koa-body": "^1.2.1",
+    "koa-ejs": "^2.0.1",
+    "koa-hbs": "^0.7.0",
+    "koa-logger": "^1.2.2",
+    "koa-router": "^5.1.2",
+    "onoff": "^1.0.2"
+  }
 }
