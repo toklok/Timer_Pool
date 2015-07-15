@@ -7,4 +7,15 @@ var Gpio = require('onoff').Gpio,
 
 
 
-console.log('works');
+filter.watch(function (err, value) {
+
+    if (err) {
+        throw err;
+    }
+
+    if (value === 1) {
+
+        console.log('did it');
+    }
+
+});
