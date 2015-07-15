@@ -13,9 +13,22 @@ filter.watch(function (err, value) {
         throw err;
     }
 
-    if (value === 1) {
+    if (value <= 1) {
 
-        console.log('did it');
+        //On
+
+        relay.setDirection('in');
+
+    }
+
+    if (value >=1) {
+
+        //Off
+
+        relay.setDirection('out');
+
+        console.log('off');
+
     }
 
 });
