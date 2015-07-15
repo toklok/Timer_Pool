@@ -7,6 +7,8 @@ var render = require('koa-ejs');
 var path = require('path');
 var koaBody = require('koa-body')();
 var CronJob = require('cron').CronJob;
+var Gpio = require('onoff').Gpio,
+    relay = new Gpio(4, 'out', 'none');
 
 var app = koa();
 
@@ -62,11 +64,18 @@ route.post('/new', koaBody,
     try {
 
         new CronJob('*/'+hour+' * * * *', function() {
-            console.log('turn on');
+
+            console.log('on');
+            relay.setDirection('in');
+
         }, null, true, 'America/Los_Angeles');
 
         new CronJob('*/'+minute+' * * * *', function() {
+            
             console.log('turn off');
+
+            relay.setDirection('out');
+
         }, null, true, 'America/Los_Angeles');
     }
 
