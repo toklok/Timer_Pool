@@ -5,31 +5,6 @@ var Gpio = require('onoff').Gpio,
 
 //Watches filter for changes and acts on those changes
 
-filter.watch(function (err, value) {
-
-    if (err) {
-        throw err;
-    }
-
-    if (value <= 1) {
-
-        //On
-
-        relay.setDirection('in');
-
-    }
-
-    if (value >=1) {
-
-        //Off
-
-        relay.setDirection('out');
-
-        console.log('off');
-
-    }
 
 
-});
-
-
+console.log('works');
