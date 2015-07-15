@@ -15,17 +15,17 @@ filter.watch(function (err, value) {
 
     if (value <= 1) {
 
-        //On
+        //Off
 
-        relay.setDirection('in');
+        relay.setDirection('out');
 
     }
 
     if (value >=1) {
 
-        //Off
+        //On
 
-        relay.setDirection('out');
+        relay.setDirection('in');
 
         console.log('off');
 
