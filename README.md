@@ -5,5 +5,3 @@
 * KoaJS
 * RethinkDB
 * EJS
-=======
-Raspberry Pi pool timer using a npm module.
