@@ -1,9 +1,9 @@
-# pool_controller
+# Pool Timer
 
-## Raspberry Pi pool controller for reduced chemical pools.
+## Raspberry Pi pool timer using a npm cron module
 
 * KoaJS
 * RethinkDB
-* Template
+* EJS
 =======
-Raspberry Pi pool controller for reduced chemical pools.
+Raspberry Pi pool timer using a npm module.
